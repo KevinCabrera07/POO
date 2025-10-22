@@ -1,11 +1,11 @@
 public class EjecutarHerenciaAnimal {
 
     public static void main(String[] args) {
-        Animal Soud = new Perro();
-        Animal Paco = new Gato();
+        Animal soud = new Gato();
+        Animal paco = new Perro();
 
-        Paco.hacerSonido();
-        Soud.hacerSonido();
+        paco.hacerSonido();
+        soud.hacerSonido();
 
     }
 }
