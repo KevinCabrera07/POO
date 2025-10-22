@@ -1,0 +1,45 @@
+1R/La encapsulación permite ocultar datos internos de las distintas clases y es importante 
+    porque es la que permite proteger los datos controlando y permitiendo su acceso mediante métodos públicos 
+
+    2R/La diferencia es que el constructor sirve a la hora de iniciar la creación de un objeto y el método
+    es el que define el comportamiento o la acción que va a ejecutar el objeto cuando ya fue creado
+
+    3R/Los atributos deben ser privados porque se deben proteger los datos evitando así el acceso
+    directo desde otras clases y esto sirve para evitar modificaciones erróneas.
+
+    4R/El getters permite leer el valor de un atributo privado devolviéndole su valor y setters 
+    es el que permite modificar el valor de los atributos 
+
+    5R/(Falso)Porque el método setter si valida los datos a la hora de colocarlos para de esta forma
+    evitar valores incorrectos dentro del objeto
+
+
+CLASE A:Atributos
+______________________________________________________________________________________
+|Nombre |Tipo de dato      |	Visibilidad |	Descripción                          |
+|String |Titular	       |private	        |Nombre del dueño de la cuenta           |
+|String |	NumeroCuenta   |private	        |Numero irrepetible de la cuenta bancaria|
+|double |	saldo          |private	        |Dinero disponible                       | 
+--------------------------------------------------------------------------------------
+Métodos
+______________________________________________________________________________________________
+|Nombre	  |Parámetros     |	Retorno|	Descripción                                          |
+|depositar|	Double (monto)|	void   |Aumenta el saldo de la cuenta                            |
+|retirar  |	Double(monto) |	void   |Disminuye el saldo de la cuenta si hay fondos suficientes|
+|ToString |		String    |	Retorna| la información básica de la cuenta                      |
+----------------------------------------------------------------------------------------------
+CLASE B:Atributos
+________________________________________________________________________
+|Nombre	        |Tipo de dato |	Visibilidad|	Descripción            |
+|Codigo	String	|             |Private     |Identificador del producto |
+|Descripcion	|String	      |Private	   |Detalle del producto       |
+|Cantidad	    |int	      |Private	   |Número de unidades         |
+|PrecioUnitario	|double	      |Private	   |Valor por unidad           |
+------------------------------------------------------------------------
+Metodos
+__________________________________________________________________________________________________________
+|Nombre             |	parámetros	  |Retorno |	Descripción                                          |
+|CalcularSubtotal   |		          | Double |Retorna el resultado de multiplicar la cantidad          |
+|Aplicar descuento  |Double porcentaje| void   |Aplica un descuento si esta entre 0 y 50                 |
+|incrementarcantidad|	Int valor     |	void   |Aumenta la cantidad si el valor ingresado es mayor que 0 |
+----------------------------------------------------------------------------------------------------------
