@@ -1,21 +1,24 @@
 package ELEVADOR;
 
 public class Puerta {
+
     private boolean abierta = false;
 
-    public void abrir() throws InterruptedException {
+    public void abrir() {
         if (!abierta) {
-            System.out.println("Abriendo puertas...");
-            Thread.sleep(700);
             abierta = true;
+            System.out.println("Puerta abriéndose...");
+        } else {
+            System.out.println("La puerta ya está abierta.");
         }
     }
 
-    public void cerrar() throws InterruptedException {
+    public void cerrar() {
         if (abierta) {
-            System.out.println("Cerrando puertas...");
-            Thread.sleep(700);
             abierta = false;
+            System.out.println("Puerta cerrándose...");
+        } else {
+            System.out.println("La puerta ya está cerrada.");
         }
     }
 
@@ -23,3 +26,4 @@ public class Puerta {
         return abierta;
     }
 }
+
