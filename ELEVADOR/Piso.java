@@ -1,12 +1,15 @@
 package ELEVADOR;
 
 public class Piso {
+
     private int numero;
-    private Boton botonSubir = new Boton();
-    private Boton botonBajar = new Boton();
+    private BotonPiso botonSubir;
+    private BotonPiso botonBajar;
 
     public Piso(int numero) {
         this.numero = numero;
+        botonSubir = new BotonPiso(numero);
+        botonBajar = new BotonPiso(numero);
     }
 
     public int getNumero() {
@@ -22,4 +25,5 @@ public class Piso {
         botonBajar.presionar();
         System.out.println("Solicitud para bajar desde el piso " + numero);
     }
+
 }

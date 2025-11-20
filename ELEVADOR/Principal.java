@@ -8,7 +8,7 @@ public class Principal {
         System.out.println("=== SIMULACIÓN DEL ELEVADOR DE 10 PISOS ===");
         System.out.println("Usuario en el piso 2 presiona el botón para SUBIR...");
 
-        // CORRECTO: usamos el enum dentro de Elevador
+        
         sistema.solicitarDesdePiso(2, ELEVADOR.Direccion.SUBIENDO);
 
         Thread.sleep(2000);

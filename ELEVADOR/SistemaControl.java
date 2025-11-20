@@ -14,12 +14,12 @@ public class SistemaControl {
     }
 
     public void solicitarDesdePiso(int numeroPiso, ELEVADOR.Direccion dir) throws InterruptedException {
-        // Llamamos al nuevo método solicitar()
+        // nuevo método solicitar()
         elevador.solicitar(numeroPiso, dir);
     }
 
     public void ejecutar() throws InterruptedException {
-        // Ahora se llama iniciarViaje()
+       
         elevador.iniciarViaje();
     }
 

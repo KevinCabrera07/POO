@@ -14,7 +14,7 @@ public class Boton {
 
     public boolean estaPresionado() {
         return presionado;
-    }
+}
 }
     
 
