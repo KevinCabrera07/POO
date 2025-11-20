@@ -25,5 +25,4 @@ public class Piso {
         botonBajar.presionar();
         System.out.println("Solicitud para bajar desde el piso " + numero);
     }
-
 }

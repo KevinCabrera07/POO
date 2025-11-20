@@ -54,7 +54,7 @@ public class ELEVADOR {
                 puerta.cerrar();
                 return; // Termina aquí
             } else {
-                mostrarMenu(); // Aún no es su piso final
+                mostrarMenu(); 
             }
         }
 

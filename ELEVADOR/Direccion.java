@@ -5,4 +5,5 @@ public class Direccion {
     public static final Direccion DETENIDO = new Direccion();
 
     private Direccion() {}
+    
 }

@@ -13,5 +13,4 @@ public class BotonElevador extends Boton {
         super.presionar();
         System.out.println("Botón del piso " + pisoDestino + " presionado adentro del Elevador.");
     }
-
 }

@@ -27,4 +27,3 @@ public class SistemaControl {
         System.out.println("EMERGENCIA: la función aún no está implementada en la nueva clase Elevador");
     }
 }
-
